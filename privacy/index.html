@@ -36,13 +36,13 @@ footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:v
 <p><em>Last updated: September 7, 2026</em></p>
 <p>Holdback ("we", "us") makes a mobile app that helps self-employed people estimate how much of their income to set aside for taxes. This policy explains what we collect, why, and your choices.</p>
 <h2>The short version</h2>
-<ul><li>Your <strong>tax profile and the payments you log stay on your device</strong> by default. They are only sent to our servers if you turn on <strong>Backup</strong>.</li><li>We <strong>never connect to your bank</strong> or any financial account.</li><li>We <strong>do not sell or share your personal information</strong> for advertising, and there are no ads in Holdback.</li><li>The free web calculator works <strong>without an account</strong> and does not store what you type.</li></ul>
+<ul><li>Your <strong>tax profile and the payments you log stay on your device</strong> by default. They are only sent to our servers if you turn on <strong>Backup</strong>.</li><li>We <strong>never connect to your bank</strong> or any financial account.</li><li>We <strong>do not sell or share your personal information</strong> for advertising, and there are no ads in Holdback.</li><li>The calculator works <strong>without an account</strong> and does not store what you type.</li></ul>
 <h2>What we collect</h2>
 <p><strong>Account information.</strong> If you create an account, we store your email address and an encrypted password (handled by our authentication provider, Supabase).</p>
 <p><strong>Tax data you enter.</strong> Your filing status, state, expected income, and the payments you log are stored <strong>locally on your device</strong>. If you enable Backup (a paid feature), an encrypted copy is stored on our servers (Supabase), associated with your account, so you can restore it or sync another device. Row-level security ensures only your account can read it.</p>
 <p><strong>Subscription status.</strong> If you subscribe to Holdback Plus, our payment processors (Apple, Google, or Stripe) tell us whether your subscription is active. We do not receive your card number.</p>
 <p><strong>Diagnostics (optional / consent-gated).</strong> In production builds we use Sentry for crash reporting and PostHog for privacy-preserving product analytics (sampled, with personal fields scrubbed before they leave the app). On the web, analytics run only after you consent via the cookie banner. On mobile you can disable analytics in Settings → Privacy.</p>
-<p><strong>The web calculator.</strong> Numbers you type into the free <code>/calculator</code> page are processed in your browser to show a result. We do not transmit or store them.</p>
+<p><strong>The calculator.</strong> Numbers you type into the calculator are processed on your device to show a result. We do not transmit or store them.</p>
 <h2>What we do NOT collect</h2>
 <ul><li>Bank, brokerage, or payment-account credentials or balances.</li><li>The contents of your tax returns; we do not prepare or file returns.</li><li>Precise location, contacts, photos, microphone, or camera data.</li></ul>
 <h2>How we use information</h2>
