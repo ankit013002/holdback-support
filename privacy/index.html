@@ -1,71 +1,14 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Holdback — Privacy Policy</title>
-<meta name="description" content="How Holdback handles your data. Your tax profile and logged payments stay on your device by default.">
-<style>
-:root{--bg:#faf9f7;--fg:#1a1a1a;--muted:#5c5c5c;--brand:#13294B;--line:#e3e0da;--card:#fff}
-@media(prefers-color-scheme:dark){:root{--bg:#12151a;--fg:#e8e6e3;--muted:#a0a0a0;--brand:#9db4d8;--line:#2a2f38;--card:#171b21}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
-header.site{border-bottom:1px solid var(--line);margin-bottom:40px;padding-bottom:22px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.mark{font-family:Georgia,"Times New Roman",serif;font-size:26px;font-weight:600;color:var(--brand);text-decoration:none;letter-spacing:-.01em}
-nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-right:16px}
-nav a:hover{color:var(--brand)}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.2;letter-spacing:-.02em;margin:0 0 10px}
-h2{font-size:19px;margin:38px 0 10px;letter-spacing:-.01em}
-h3{font-size:16px;margin:26px 0 8px}
-p,li{color:var(--fg)}
-li{margin:5px 0}
-a{color:var(--brand)}
-code{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:.9em}
-.tw{overflow-x:auto}
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
-th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--card)}
-.updated{color:var(--muted);font-size:14px;margin:0 0 30px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:20px 0}
-footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-.disclaimer{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin:26px 0}
-</style>
-</head><body><div class="wrap">
-<header class="site"><a class="mark" href="/holdback-support/">Holdback</a>
-<nav><a href="/holdback-support/">Support</a><a href="/holdback-support/privacy/">Privacy</a><a href="/holdback-support/terms/">Terms</a></nav></header>
-<h1>Holdback — Privacy Policy</h1>
-<p><em>Last updated: September 7, 2026</em></p>
-<p>Holdback ("we", "us") makes a mobile app that helps self-employed people estimate how much of their income to set aside for taxes. This policy explains what we collect, why, and your choices.</p>
-<h2>The short version</h2>
-<ul><li>Your <strong>tax profile and the payments you log stay on your device</strong> by default. They are only sent to our servers if you turn on <strong>Backup</strong>.</li><li>We <strong>never connect to your bank</strong> or any financial account.</li><li>We <strong>do not sell or share your personal information</strong> for advertising, and there are no ads in Holdback.</li><li>The calculator works <strong>without an account</strong> and does not store what you type.</li></ul>
-<h2>What we collect</h2>
-<p><strong>Account information.</strong> If you create an account, we store your email address and an encrypted password (handled by our authentication provider, Supabase).</p>
-<p><strong>Tax data you enter.</strong> Your filing status, state, expected income, and the payments you log are stored <strong>locally on your device</strong>. If you enable Backup (a paid feature), an encrypted copy is stored on our servers (Supabase), associated with your account, so you can restore it or sync another device. Row-level security ensures only your account can read it.</p>
-<p><strong>Subscription status.</strong> If you subscribe to Holdback Plus, our payment processors (Apple, Google, or Stripe) tell us whether your subscription is active. We do not receive your card number.</p>
-<p><strong>Diagnostics (optional / consent-gated).</strong> In production builds we use Sentry for crash reporting and PostHog for privacy-preserving product analytics (sampled, with personal fields scrubbed before they leave the app). On the web, analytics run only after you consent via the cookie banner. On mobile you can disable analytics in Settings → Privacy.</p>
-<p><strong>The calculator.</strong> Numbers you type into the calculator are processed on your device to show a result. We do not transmit or store them.</p>
-<h2>What we do NOT collect</h2>
-<ul><li>Bank, brokerage, or payment-account credentials or balances.</li><li>The contents of your tax returns; we do not prepare or file returns.</li><li>Precise location, contacts, photos, microphone, or camera data.</li></ul>
-<h2>How we use information</h2>
-<ul><li>To provide the app: compute estimates, remember your profile, sync your backup if enabled, and schedule the local deadline reminders you ask for.</li><li>To keep the app working: diagnose crashes and understand which features are used (in aggregate).</li><li>To manage your subscription and provide support.</li></ul>
-<p>We do not use your information for advertising or profiling, and we do not sell it.</p>
-<h2>Sharing</h2>
-<p>We share information only with service providers that run the app on our behalf, under contract:</p>
-<div class="tw"><table><thead><tr><th>Provider</th><th>Purpose</th></tr></thead><tbody><tr><td>Supabase</td><td>Authentication and (if you enable Backup) encrypted storage of your tax data</td></tr><tr><td>Apple / Google / Stripe</td><td>Subscription billing</td></tr><tr><td>Sentry</td><td>Crash reporting (production)</td></tr><tr><td>PostHog</td><td>Product analytics (consent-gated / opt-out)</td></tr><tr><td>Expo</td><td>Push-notification delivery (if you enable reminders)</td></tr></tbody></table></div>
-<p>We may disclose information if required by law, or to protect our rights or users' safety.</p>
-<h2>Your choices and rights</h2>
-<ul><li><strong>Keep everything local:</strong> simply do not enable Backup.</li><li><strong>Delete device data:</strong> Settings → Clear tax data.</li><li><strong>Delete your account and server data:</strong> Settings → Delete account. This removes your profile and any backed-up tax data from our servers.</li><li><strong>Turn off analytics:</strong> Settings → Privacy (mobile), or decline the web cookie banner.</li><li><strong>Access / export:</strong> use the year-end CSV export, or contact us.</li></ul>
-<p>Depending on where you live (e.g. the EEA/UK, California), you may have additional rights to access, correct, delete, or restrict processing of your personal information. Contact us to exercise them.</p>
-<h2>Data retention</h2>
-<p>Local data stays until you clear it or uninstall the app. Backed-up data is kept until you delete your account or disable Backup and delete the account. Billing records are retained as required by the app stores and by law.</p>
-<h2>Security</h2>
-<p>Data in transit is encrypted with TLS. Backed-up data is encrypted at rest by our storage provider and protected by per-account access rules. No system is perfectly secure; keep your device and account credentials safe.</p>
-<h2>Children</h2>
-<p>Holdback is for adults (18+) with self-employment income. We do not knowingly collect information from children.</p>
-<h2>International users</h2>
-<p>Our service providers may process data in the United States and other countries. By using Holdback you consent to this transfer.</p>
-<h2>Changes</h2>
-<p>We will post any changes here and update the "Last updated" date. Material changes will be announced in the app.</p>
-<h2>Contact</h2>
-<p>Questions or requests: <strong>ankit013002+holdback@gmail.com</strong></p>
-<footer>Holdback &middot; Ankit Patel &middot; <a href="mailto:ankit013002+holdback@gmail.com">ankit013002+holdback@gmail.com</a></footer>
-</div></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holdback: Privacy Policy · moved to petalformllc.com</title>
+<link rel="canonical" href="https://petalformllc.com/apps/holdback/privacy/">
+<meta http-equiv="refresh" content="0; url=https://petalformllc.com/apps/holdback/privacy/">
+<script>location.replace("https://petalformllc.com/apps/holdback/privacy/" + location.hash)</script>
+</head>
+<body style="font:17px/1.6 system-ui,sans-serif;max-width:560px;margin:15vh auto;padding:0 20px">
+<p>This page has moved to <a href="https://petalformllc.com/apps/holdback/privacy/">petalformllc.com/apps/holdback/privacy/</a>.</p>
+</body>
+</html>

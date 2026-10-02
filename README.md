@@ -1,12 +1,5 @@
-# Holdback — support & legal
+# Holdback: moved
 
-Public support page, Privacy Policy, and Terms of Service for the Holdback iOS
-and Android app.
-
-- Support: https://ankit013002.github.io/holdback-support/
-- Privacy: https://ankit013002.github.io/holdback-support/privacy/
-- Terms:   https://ankit013002.github.io/holdback-support/terms/
-
-The HTML here is generated from the documents of record in the (private) app
-repo at `docs/legal/*.md`. Edit those, regenerate, and commit here — do not
-hand-edit the HTML, or the two will drift.
+Holdback's privacy policy, terms and support pages now live at **https://petalformllc.com/apps/holdback/**.
+Every page of this GitHub Pages site redirects to its new address, so old links keep working.
+Edit the documents in the `petalformllc-site` repo (`content/legal/holdback/`), not here.
